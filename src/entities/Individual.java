@@ -24,9 +24,9 @@ public class Individual extends Payers {
 	@Override
 	public double taxesPaid() {
 		if (getAnualIncome() < 20000.00) {
-			return ((getAnualIncome() * 0.15) - (healthExpenditures * 0.5));
+			return (getAnualIncome() * 0.15) - (healthExpenditures * 0.5);
 		} else {
-			return ((getAnualIncome() * 0.25) - (healthExpenditures * 0.5));
+			return (getAnualIncome() * 0.25) - (healthExpenditures * 0.5);
 		}
 	}
 

@@ -26,9 +26,9 @@ public class Program {
 		for (int i = 1; i <= n; i++) {
 			System.out.print("Pessoa física ou Jurídica? f/j ");
 			char p = sc.next().charAt(0);
-			sc.nextLine();
 
 			System.out.print("Nome: ");
+			sc.nextLine();
 			String name = sc.next();
 
 			System.out.print("Renda anual: ");
@@ -49,7 +49,7 @@ public class Program {
 		System.out.println("********************************");
 		System.out.println("Pagamentos de taxa: ");
 		for (Payers p : payers) {
-			System.out.println(p.getName() + ": R$" + String.format("%.2f", p.taxesPaid()));
+			System.out.println(p.getName() + ": R$ " + String.format("%.2f", p.taxesPaid()));
 			totalTaxes += p.taxesPaid();
 		}
 
